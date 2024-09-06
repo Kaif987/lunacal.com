@@ -1,3 +1,5 @@
+const { blackA, green, mauve, violet } = require("@radix-ui/colors");
+
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: ["class"],
@@ -6,6 +8,7 @@ export default {
     extend: {
       fontFamily: {
         jakarta: ["Plus Jakarta Sans", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
       },
       backgroundColor: {
         back: "#1E1E1E",
@@ -16,9 +19,18 @@ export default {
         inactiveWidgetText: "#A3ADB2",
         inactiveWidgetBg: "#1D1D1D",
         widgetBg: "#363C43",
+        buttonSecondary: "#464C53",
       },
       textColor: {
         widget: "#969696",
+      },
+      colors: {
+        ...blackA,
+        ...green,
+        ...mauve,
+        ...violet,
+        buttonStart: "#303439",
+        buttonEnd: "#161718",
       },
     },
   },
